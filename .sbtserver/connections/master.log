@@ -1,0 +1,7 @@
+New log file opened at Mon Jun 01 09:52:45 BST 2015 by 7491@Henry-Woodsends-iMac.local
+Taking next connection to: 62412
+New client attempting to connect on port: 62413-62412
+  Address = /192.168.0.3:62412
+This client on port 62413 has uuid e1aeee96-2ed4-4284-a4f3-b090688d67d5 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-e1aeee96-2ed4-4284-a4f3-b090688d67d5
+Taking next connection to: 62412

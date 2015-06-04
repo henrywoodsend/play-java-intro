@@ -1,0 +1,70 @@
+@(wine: Wine)
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Wine Lister</title>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <script src="@routes.Assets.versioned("javascripts/jquery-1.11.1.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/index.js")" type="text/javascript"></script>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+</head>
+<body>
+
+    <div class="navbar-container">
+        <a href="/index"><img src="@routes.Assets.versioned("images/wine_lister_logo.png")" style="float:left"/></a>
+        <div class="navbar">
+            <a href="/index">Home</a>
+            <a href="/about">About</a>
+            <a href="/trustedsources">Trusted Sources</a>
+            <a href="/howitworks">How it works</a>
+            <a href="/blog">Blog</a>
+            <a href="/subscribe" class="pull-right">Subscribe</a>
+            <a href="/login" class="pull-right">Login</a>
+        </div>
+    </div>
+
+    <div style="width:1000px;margin:0 auto">
+
+        <div class="winetitle">
+            <div class="colorbar @wine.color"></div>
+
+            <div class="imagebox">
+                <img src="/assets/images/winelabels/@wine.imgsrc"/>
+            </div>
+
+            <div style="float-left">
+                <div class="name">@wine.wine_desc</div>
+                <div class="region">@wine.region_desc</div>
+                <div class="grape">@wine.grape</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div style="width:1000px;padding-top:80px;margin-left:auto;margin-right:auto;color:#746e65;font-family:'Enriqueta',serif;font-size:1rem">
+
+            <div style="display:inline-block;margin-right:70px;vertical-align:top">
+                Home<br/>
+                About<br/>
+                Trusted Sources<br/>
+                How it Works<br/>
+                Blog</br>
+            </div>
+
+            <div style="display:inline-block">
+                Terms of use<br/>
+                Privacy Policy<br/>
+            </div>
+
+            <div style="width:100%;height:30px;margin-top:40px;padding-top:10px;margin-left:auto;margin-right:auto;border-top:1px solid #d9d5d2;color:#787269;font-size:14px">
+                &copy; 2015 Wine Lister Limited.  All rights reserved.
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
